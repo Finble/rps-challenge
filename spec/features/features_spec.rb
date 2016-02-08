@@ -5,17 +5,17 @@ feature 'Enter names' do
 		# Capybara.default_driver = :selenium
 		# end
 
-	scenario 'submit names' do 
+	scenario 'markateer submits name' do 
 		sign_in_and_play  
-		expect(page).to have_content 'Elaine vs Sharon'  #what is 'page' = HTML page, so why index ends in .erb and not .html?
+		expect(page).to have_content 'Elaine'  #what is 'page' = HTML page, so why index ends in .erb and not .html?
 	end
 end
 
 feature 'Submit choice' do
 
-	scenario 'see Player 2 submit choice' do
+	scenario 'see markateer submit choice' do
 		sign_in_and_play
 		expect(page).to have_content 'Elaine: Paper'  
-		expect(page).to have_content 'Sharon: Rock'  
+		# expect(page).to have_content 'Sharon: Rock'  
 	end
 end
