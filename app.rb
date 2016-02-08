@@ -9,7 +9,7 @@ enable :sessions
 
 	post '/names' do
 		session[:player_1_name] = params[:player_1_name]  #shouldn't render @player_1_name from post - need to save instance variable in a session via a get request
-	  session[:player_2_name] = params[:player_2_name]  #shouldn't render @player_2_name from post - need to save instance variable in a session via a get request
+	  session[:player_2_name] = params[:player_2_name]  #as above
 	  redirect '/play'
 	end
 
